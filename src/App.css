@@ -1,0 +1,98 @@
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 70vw;
+  margin: auto;
+}
+
+header {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.create-todo {
+  display: grid;
+  grid-template-columns: 1fr 8rem;
+  column-gap: 1rem;
+}
+
+.create-todo input {
+  font-size: 1.2rem;
+  padding: 0.3rem 0.5rem;
+}
+
+.todo-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  border-radius: 0.25rem;
+  margin: 0.5rem 0;
+}
+
+.todo-card:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.todo-card-body {
+  width: 70%;
+}
+
+.todo-card-btn-group {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.todo-toggle-input {
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0 0.2rem;
+  margin: 0;
+  width: 100%;
+
+}
+
+.btn {
+  outline: none;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 0.25rem;
+  margin: 0 0.3rem;
+  cursor: pointer;
+}
+
+.btn:last-child {
+  margin-right: 0;
+}
+
+.danger {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.warning {
+  background-color: #f0ad4e;
+  color: #fff;
+}
+
+.success {
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.primary {
+  background-color: #0275d8;
+  color: #fff;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.5);
+}
