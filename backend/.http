@@ -1,0 +1,25 @@
+@HOST=http://localhost:8080
+
+GET {{HOST}}/ping HTTP/2.0
+
+###
+POST {{HOST}}/api/todos HTTP/2.0
+Content-Type: application/json
+
+{
+    "title": "buy milk"
+}
+
+###
+GET {{HOST}}/api/todos HTTP/2.0
+
+###
+DELETE {{HOST}}/api/todos/2 HTTP/2.0
+
+###
+PATCH {{HOST}}/api/todos/3 HTTP/2.0
+Content-Type: application/json
+
+{
+    "title": "test"
+}
